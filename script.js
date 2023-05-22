@@ -1,0 +1,2 @@
+var canvasWidth = ;
+var canvasHeight = ;
