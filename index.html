@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <title>Running Simulator</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        #stickmin {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(0deg);
+            transition: 0.2s;
+        }
+    </style>
 </head>
 <body>
-    <h1>Running Simulators</h1>
-    <p>Level:<div id="game"><span class="tab">Coins:</div></p>
+    <h1>Running Simulator</h1>
+    <h2>Level:<div id="Level"></div><span class="tab"></span>Coins:<div id="Coins"></div><span class="tab"></span>Rebirth:<div id="Rebirth"></div></span>Laps:<div id="Laps"></div><span class="tab"></span>Total Laps Ran:<div id="TotalLapsRan"></div><span class="tab"></span></h2>
 </body>
+    <button onclick="levelup()">Level Up</button>
+    <button onclick="rebirth()">Rebirth</button>
+<div class="container_whole_page">
+
+</div>
 </html>
