@@ -7,4 +7,38 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 50fr 10fr 5fr 1fr;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.fx {
+    -webkit-display: flex;
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
   }
+  
+  .fx > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .fx > div:first-child {
+    width: 30%;
+  }
+  
+  .flex {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  
+  #test-target {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }  
