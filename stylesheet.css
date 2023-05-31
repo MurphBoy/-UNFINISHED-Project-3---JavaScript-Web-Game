@@ -5,16 +5,63 @@
 .container_whole_page {
   height: 100%;
   display: grid;
-  grid-template-columns: 192fr 768fr;
-  grid-template-rows: 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr 40fr;
+  grid-template-columns: 192fr 576fr 192fr;
+  grid-template-rows: 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr 7fr 40fr;
   grid-template-areas:
-    "header header header"
-    "asideLEFT mainCAST asideRIGHT"
-    "asideLEFT mainPLOT asideRIGHT"
-    "asideLEFT mainSOURCES asideRIGHT"
-    "footer footer footer";
+    "main_collumn_left main_row main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_01 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_02 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_03 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_04 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_05 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_06 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_07 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_08 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left lap_09 main_collumn_right"
+    "main_collumn_left barrier main_collumn_right"
+    "main_collumn_left main_row main_collumn_right";
 }
 
-.main_collumn {
+.main_collumn_left {
+  grid-area: main_collumn_left;
+  background-color: gray;
+}
 
+.main_collumn_right {
+  grid-area: main_collumn_right;
+  background-color: gray;
+}
+
+.main_row {
+  grid-area: main_row;
+  background-color: gray;
+}
+
+.barrier {
+  grid-area: barrier;
+  background-color: white;
+}
+
+.lap_01 {
+  grid-area: lap_01;
+  background-color: red;
+}
+
+.lap_02 {
+  grid-area: lap_02;
+  background-color: blue;
+}
+
+.main_collumn_right {
+  grid-area: main_collumn_right;
+  background-color: gray;
 }

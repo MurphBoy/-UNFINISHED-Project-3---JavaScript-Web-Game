@@ -1,84 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="main_font">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style>
-canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Running Simulator</title>
 </head>
-<body onload="startGame()">
-<script>
-
-var myGamePiece;
-
-function startGame() {
-    myGameArea.start();
-    myGamePiece = new component(30, 30, "black", 10, 120);
-}
-
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 960;
-        this.canvas.height = 1920;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-        this.interval = setInterval(updateGameArea, 20);
-        window.addEventListener('keydown', function (e) {
-            myGameArea.keys = (myGameArea.keys || []);
-            myGameArea.keys[e.keyCode] = (e.type == "keydown");
-        })
-        window.addEventListener('keyup', function (e) {
-            myGameArea.keys[e.keyCode] = (e.type == "keydown");            
-        })
-    }, 
-    clear : function(){
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    }
-}
-
-function component(width, height, color, x, y) {
-    this.gamearea = myGameArea;
-    this.width = width;
-    this.height = height;
-    this.speedX = 0;
-    this.speedY = 0;    
-    this.x = x;
-    this.y = y;    
-    this.update = function() {
-        ctx = myGameArea.context;
-        ctx.fillStyle = color;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
-    }
-    this.newPos = function() {
-        this.x += this.speedX;
-        this.y += this.speedY;        
-    }    
-}
-
-function updateGameArea() {
-    myGameArea.clear();
-    myGamePiece.speedX = 0;
-    myGamePiece.speedY = 0;    
-    if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.speedX = -1; }
-    if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.speedX = 1; }
-    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speedY = -1; }
-    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speedY = 1; }
-    myGamePiece.newPos();    
-    myGamePiece.update();
-}
-
-</script>
+    <script type="text/javascript">
+        //init object globally
+        var objImage = null;
+        function init() {
+            objImage = document.getElementById("image1");
+            objImage.style.position = "relative";
+            objImage.style.left = "0px";
+            objImage.style.top = "0px";
+        }
+        function getKeyAndMove(e) {
+            var key_code = e.which || e.keyCode;
+            switch (key_code) {
+                case 37: //left arrow key
+                    moveLeft();
+                    break;
+                case 38: //Up arrow key
+                    moveUp();
+                    break;
+                case 39: //right arrow key
+                    moveRight();
+                    break;
+                case 40: //down arrow key
+                    moveDown();
+                    break;
+            }
+        }
+        function moveLeft() {
+            objImage.style.left = parseInt(objImage.style.left) - 5 + "px";
+        }
+        function moveUp() {
+            objImage.style.top = parseInt(objImage.style.top) - 5 + "px";
+        }
+        function moveRight() {
+            objImage.style.left = parseInt(objImage.style.left) + 5 + "px";
+        }
+        function moveDown() {
+            objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
+        }
+        window.onload = init;
+    </script>
+<body onkeydown="getKeyAndMove(event)">
 <p><h2>Level:<div id="Level"></div><span class="tab"></span>Coins:<div id="Coins"></div><span class="tab"></span>Rebirth:<div id="Rebirth"></div></span>Laps:<div id="Laps"></div><span class="tab"></span>Total Laps Ran:<div id="TotalLapsRan"></div><span class="tab"></span></h2></p>
 <p><button onclick="levelup()">Level Up</button></p>
 <p><button onclick="rebirth()">Rebirth</button></p>
+<img id="image1" src="Images/ihelp1.png" alt="includehelp.com"/>
 </body>
 <div class="canvas">
     <div class="container_whole_page">
-        
+        <main_collumn_left><div class="main_collumn_left"></div></main_collumn_left>
+        <barrier><div class="barrier"></div></barrier>
+        <main_row><div class="main_row"></div></main_row>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_01"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_02"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_03"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_04"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_05"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_06"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_07"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_08"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="lap_09"></div>
+        <barrier><div class="barrier"></div></barrier>
+        <main_row><div class="main_row"></div></main_row>
+        <barrier><div class="barrier"></div></barrier>
+        <div class="main_collumn_right"></div>
     </div>
 </div>
 </html>
