@@ -11,8 +11,8 @@
 .container_whole_page {
   height: 100%;
   display: grid;
-  grid-template-columns: 112.5fr 75fr 75fr 75fr 75fr 75fr 75fr 75fr 75fr 75fr 112.5fr;
-  grid-template-rows: 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr 100fr 150fr;
+  grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2.5fr;
+  grid-template-rows: 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr;
   grid-template-areas:
     "main_collumn_left main_row main_collumn_right"
     "main_collumn_left barrier barrier barrier barrier barrier barrier barrier barrier barrier main_collumn_right"
@@ -104,7 +104,7 @@ main_collumn_left {
 
 .main_collumn_left {
   display: flex;
-  gap: 112.5fr;
+  gap: 2.5fr;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -124,7 +124,7 @@ main_collumn_right {
 
 .main_collumn_right {
   display: flex;
-  gap: 112.5fr;
+  gap: 2.5fr;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -150,7 +150,7 @@ main_row {
 
 .main_row {
   display: flex;
-  gap: 150fr;
+  gap: 5fr;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -176,7 +176,7 @@ barrier {
 
 .barrier {
   display: flex;
-  gap: 75fr;
+  gap: 1fr;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -202,8 +202,8 @@ lap_01 {
 
 .lap_01 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -228,8 +228,8 @@ lap_02 {
 
 .lap_02 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -254,8 +254,8 @@ lap_03 {
 
 .lap_03 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -281,8 +281,8 @@ lap_04 {
 
 .lap_04 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -307,8 +307,8 @@ lap_05 {
 
 .lap_05 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -333,8 +333,8 @@ lap_06 {
 
 .lap_06 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -359,8 +359,8 @@ lap_07 {
 
 .lap_07 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -385,8 +385,8 @@ lap_08 {
 
 .lap_08 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -411,8 +411,8 @@ lap_09 {
 
 .lap_09 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -437,8 +437,8 @@ lap_10 {
 
 .lap_10 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -463,8 +463,8 @@ lap_11 {
 
 .lap_11 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -489,8 +489,8 @@ lap_12 {
 
 .lap_12 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -515,8 +515,8 @@ lap_13 {
 
 .lap_13 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -541,8 +541,8 @@ lap_14 {
 
 .lap_14 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -567,8 +567,8 @@ lap_15 {
 
 .lap_15 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -593,8 +593,8 @@ lap_16 {
 
 .lap_16 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -619,8 +619,8 @@ lap_17 {
 
 .lap_17 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -645,8 +645,8 @@ lap_18 {
 
 .lap_18 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -671,8 +671,8 @@ lap_19 {
 
 .lap_19 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -697,8 +697,8 @@ lap_20 {
 
 .lap_20 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -723,8 +723,8 @@ lap_21 {
 
 .lap_21 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -749,8 +749,8 @@ lap_22 {
 
 .lap_22 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -775,8 +775,8 @@ lap_23 {
 
 .lap_23 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -801,8 +801,8 @@ lap_24 {
 
 .lap_24 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -827,8 +827,8 @@ lap_25 {
 
 .lap_25 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -853,8 +853,8 @@ lap_26 {
 
 .lap_26 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -879,8 +879,8 @@ lap_27 {
 
 .lap_27 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -905,8 +905,8 @@ lap_28 {
 
 .lap_28 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -931,8 +931,8 @@ lap_29 {
 
 .lap_29 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -957,8 +957,8 @@ lap_30 {
 
 .lap_30 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -983,8 +983,8 @@ lap_31 {
 
 .lap_31 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -1009,8 +1009,8 @@ lap_32 {
 
 .lap_32 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -1035,8 +1035,8 @@ lap_33 {
 
 .lap_33 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -1061,8 +1061,8 @@ lap_34 {
 
 .lap_34 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -1087,8 +1087,8 @@ lap_35 {
 
 .lap_35 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -1113,8 +1113,8 @@ lap_36 {
 
 .lap_36 {
   display: flex;
-  gap: 75fr;
-  flex-direction: column;
+  gap: 7fr;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
