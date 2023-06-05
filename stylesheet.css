@@ -43,7 +43,7 @@ justify-content: space-around;
 .container_whole_page {
 height: 100%;
 display: grid;
-grid-template-columns: 10fr 80fr 10fr;
+grid-template-columns: 10fr 55fr 10fr;
 grid-template-rows: 1fr 176fr 1fr;
 grid-template-areas:
   "header header header"
