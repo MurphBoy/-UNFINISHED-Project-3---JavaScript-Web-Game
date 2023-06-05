@@ -7,40 +7,50 @@
         <script type="text/javascript">
         //init object globally
         var objImage = null;
+        let safe = true;
         function init() {
             objImage = document.getElementById("image1");
             objImage.style.position = "relative";
             objImage.style.left = "0px";
             objImage.style.top = "0px";
+            
         }
         function getKeyAndMove(e) {
             var key_code = e.which || e.keyCode;
             switch (key_code) {
                 case 37: //left arrow key
                     moveLeft();
+                    // Update position and check for crossing
+                    updatePosition(objImage.style.left, objImage.style.top);
                     break;
                 case 38: //Up arrow key
                     moveUp();
+                    // Update position and check for crossing
+                    updatePosition(objImage.style.left, objImage.style.top);
                     break;
                 case 39: //right arrow key
                     moveRight();
+                    // Update position and check for crossing
+                    updatePosition(objImage.style.left, objImage.style.top);
                     break;
                 case 40: //down arrow key
                     moveDown();
+                    // Update position and check for crossing
+                    updatePosition(objImage.style.left, objImage.style.top);
                     break;
             }
         }
         function moveLeft() {
-            objImage.style.left = parseInt(objImage.style.left) - 5 + "px";
+            objImage.style.left = parseInt(objImage.style.left) - 50 + "px";
         }
         function moveUp() {
-            objImage.style.top = parseInt(objImage.style.top) - 5 + "px";
+            objImage.style.top = parseInt(objImage.style.top) - 50 + "px";
         }
         function moveRight() {
-            objImage.style.left = parseInt(objImage.style.left) + 5 + "px";
+            objImage.style.left = parseInt(objImage.style.left) + 50 + "px";
         }
         function moveDown() {
-            objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
+            objImage.style.top = parseInt(objImage.style.top) + 50 + "px";
         }
         window.onload = init;
     </script>
@@ -73,18 +83,67 @@
                            </ul>  
                        </nav>
                    </div>
-                   <div class="lap_01">lap_01</div>
-                   <div class="lap_02">lap_02</div>
-                   <div class="lap_03">lap_03</div>
-                   <div class="lap_04">lap_04</div>
-                   <div class="lap_05">lap_05</div>
-                   <div class="lap_06">lap_06</div>
-                   <div class="lap_07">lap_07</div>
-                   <div class="lap_08">lap_08</div>
-                   <div class="lap_09">lap_09</div>
-                   <div class="lap_10">lap_10</div>
-                   <div class="lap_11">lap_11</div>
-                   <div class="lap_12">lap_12</div>
+                   <div class="lap_01">
+                    Lap 01
+                        <script>
+                            // Define the boundaries for "lap 01"
+                            const lap01StartX = 0;
+                            const lap01EndX = 100;
+                            const lap01StartY = 50;
+                            const lap01EndY = 150;
+                            
+                            // Initialize coin counter
+                            let coins = 0;
+                            
+                            // Function to check if the black dot crosses "lap 01"
+                            function checkCrossing(x, y) {
+
+                                if (y<lap01StartY || y>lap01EndY){
+                                    safe=false;
+                                }
+
+
+                                if (
+                                    x >= lap01EndX &&
+                                    safe                                    
+                                    ) {
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+
+                                }
+
+                            // Function to update the position and check for crossing
+                            function updatePosition(newX, newY) {
+                                if (checkCrossing(newX, newY)) {
+                                    coins++;
+                                    console.log("Congratulations! You crossed lap 01 and earned a coin.");
+                                    safe = true;
+                                }
+                            }
+                            
+                            // Example usage
+                            let blackDotX = 75;
+                            let blackDotY = 100;
+                            
+                            
+                            
+                            // Print the number of coins
+                            console.log("Total coins:", coins);
+                        </script>
+                   </div>
+                   <div class="lap_02">Lap 02&nbsp;<b>Level 1 Required!</b></div>
+                   <div class="lap_03">Lap 03&nbsp;<b>Level 3 Required!</b></div>
+                   <div class="lap_04">Lap 04&nbsp;<b>Level 5 Required!</b></div>
+                   <div class="lap_05">Lap 05&nbsp;<b>Level 8 Required!</b></div>
+                   <div class="lap_06">Lap 06&nbsp;<b>Level 15 Required!</b></div>
+                   <div class="lap_07">Lap 07&nbsp;<b>Level 25 Required!</b></div>
+                   <div class="lap_08">Lap 08&nbsp;<b>Level 40 Required!</b></div>
+                   <div class="lap_09">Lap 09&nbsp;<b>Level 50 Required!</b></div>
+                   <div class="lap_10">Lap 10&nbsp;<b>Level 60 Required!</b></div>
+                   <div class="lap_11">Lap 11&nbsp;<b>Level 75 Required!</b></div>
+                   <div class="lap_12">Lap 12&nbsp;<b>Level 85 Required!</b></div>
                    <div class="main_row">
                        <nav>  
                            <ul class="navbar">  
@@ -100,18 +159,18 @@
                            </ul>  
                        </nav>
                    </div>
-                   <div class="lap_13">lap_13</div>
-                   <div class="lap_14">lap_14</div>
-                   <div class="lap_15">lap_15</div>
-                   <div class="lap_16">lap_16</div>
-                   <div class="lap_17">lap_17</div>
-                   <div class="lap_18">lap_18</div>
-                   <div class="lap_19">lap_19</div>
-                   <div class="lap_20">lap_20</div>
-                   <div class="lap_21">lap_21</div>
-                   <div class="lap_22">lap_22</div>
-                   <div class="lap_23">lap_23</div>
-                   <div class="lap_24">lap_24</div>
+                   <div class="lap_13">Lap 13&nbsp;<b>Prestige 1 Required!</b></div>
+                   <div class="lap_14">Lap 14&nbsp;<b>Prestige 3 Required!</b></div>
+                   <div class="lap_15">Lap 15&nbsp;<b>Prestige 5 Required!</b></div>
+                   <div class="lap_16">Lap 16&nbsp;<b>Prestige 8 Required!</b></div>
+                   <div class="lap_17">Lap 17&nbsp;<b>Prestige 15 Required!</b></div>
+                   <div class="lap_18">Lap 18&nbsp;<b>Prestige 25 Required!</b></div>
+                   <div class="lap_19">Lap 19&nbsp;<b>Prestige 40 Required!</b></div>
+                   <div class="lap_20">Lap 20&nbsp;<b>Prestige 50 Required!</b></div>
+                   <div class="lap_21">Lap 21&nbsp;<b>Prestige 60 Required!</b></div>
+                   <div class="lap_22">Lap 22&nbsp;<b>Prestige 75 Required!</b></div>
+                   <div class="lap_23">Lap 23&nbsp;<b>Prestige 85 Required!</b></div>
+                   <div class="lap_24">Lap 24&nbsp;<b>Prestige 95 Required!</b></div>
                    <div class="main_row">
                        <nav>  
                            <ul class="navbar">  
@@ -127,18 +186,18 @@
                            </ul>  
                        </nav>
                    </div>
-                   <div class="lap_25">lap_25</div>
-                   <div class="lap_26">lap_26</div>
-                   <div class="lap_27">lap_27</div>
-                   <div class="lap_28">lap_28</div>
-                   <div class="lap_29">lap_29</div>
-                   <div class="lap_30">lap_30</div>
-                   <div class="lap_31">lap_31</div>
-                   <div class="lap_32">lap_32</div>
-                   <div class="lap_33">lap_33</div>
-                   <div class="lap_34">lap_34</div>
-                   <div class="lap_35">lap_35</div>
-                   <div class="lap_36">lap_36</div>
+                   <div class="lap_25">Lap 25&nbsp;<b>Prestige 100 Required!</b></div>
+                   <div class="lap_26">Lap 26&nbsp;<b>Prestige 150 Required!</b></div>
+                   <div class="lap_27">Lap 27&nbsp;<b>Prestige 200 Required!</b></div>
+                   <div class="lap_28">Lap 28&nbsp;<b>Prestige 250 Required!</b></div>
+                   <div class="lap_29">Lap 29&nbsp;<b>Prestige 300 Required!</b></div>
+                   <div class="lap_30">Lap 30&nbsp;<b>Prestige 400 Required!</b></div>
+                   <div class="lap_31">Lap 31&nbsp;<b>Prestige 500 Required!</b></div>
+                   <div class="lap_32">Lap 32&nbsp;<b>Prestige 550 Required!</b></div>
+                   <div class="lap_33">Lap 33&nbsp;<b>Prestige 650 Required!</b></div>
+                   <div class="lap_34">Lap 34&nbsp;<b>Prestige 750 Required!</b></div>
+                   <div class="lap_35">Lap 35&nbsp;<b>Prestige 850 Required!</b></div>
+                   <div class="lap_36">Lap 36&nbsp;<b>Prestige 950 Required!</b></div>
                    <div class="main_row">
                        <nav>  
                            <ul class="navbar">  
