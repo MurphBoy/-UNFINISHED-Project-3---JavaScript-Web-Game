@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="main_font">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="stylesheet.css" rel="stylesheet">
-    <title>Running Simulator</title>
-</head>
-    <script type="text/javascript">
+    <head>
+        <link href="stylesheet.css" rel="stylesheet">
+        <title>Running Simulator</title>
+    </head>
+        <script type="text/javascript">
         //init object globally
         var objImage = null;
         function init() {
@@ -49,448 +47,122 @@
 <body onkeydown="getKeyAndMove(event)">
 <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg" alt="" class="image">
 </body>
-    <div class="container_whole_page">
-        <main_collumn_left>
-            <div class="main_collumn_left">
-                <div class="main_collumn_left_TEXT"><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h1></div>
-            </div>
-        </main_collumn_left>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <main_row>
-            <div class="main_row">
-                <div class="main_row_TEXT"><h2>Level:<div id="Level"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Coins:<div id="Coins"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Prestige:<div id="Prestige"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Rebirth:<div id="Rebirth"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Laps:<div id="Laps"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Total Laps Ran:<div id="TotalLapsRan"></div></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="levelup()">Level Up</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="prestige()">Prestige</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="rebirth()">Rebirth</button></h2></div>
-            </div>
-        </main_row>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_01>
-            <div class="lap_01">
-                <div class="lap_01_TEXT"><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h4></div>
-            </div>
-        </lap_01>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_02>
-            <div class="lap_02">
-                <div class="lap_02_TEXT"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h5></div>
-            </div>
-        </lap_02>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_03>
-            <div class="lap_03">
-                <div class="lap_03_TEXT"><h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h6></div>
-            </div>
-        </lap_03>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_04>
-            <div class="lap_04">
-                <div class="lap_04_TEXT"><h7>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h7></div>
-            </div>
-        </lap_04>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_05>
-            <div class="lap_05">
-                <div class="lap_05_TEXT"><h8>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h8></div>
-            </div>
-        </lap_05>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_06>
-            <div class="lap_06">
-                <div class="lap_06_TEXT"><h9>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h9></div>
-            </div>
-        </lap_06>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_07>
-            <div class="lap_07">
-                <div class="lap_07_TEXT"><h10>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h10></div>
-            </div>
-        </lap_07>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_08>
-            <div class="lap_08">
-                <div class="lap_08_TEXT"><h11>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h11></div>
-            </div>
-        </lap_08>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_09>
-            <div class="lap_09">
-                <div class="lap_09_TEXT"><h12>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h12></div>
-            </div>
-        </lap_09>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_10>
-            <div class="lap_10">
-                <div class="lap_10_TEXT"><h13>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h13></div>
-            </div>
-        </lap_10>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_11>
-            <div class="lap_11">
-                <div class="lap_11_TEXT"><h14>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h14></div>
-            </div>
-        </lap_11>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_12>
-            <div class="lap_12">
-                <div class="lap_12_TEXT"><h15>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h15></div>
-            </div>
-        </lap_12>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <main_row>
-            <div class="main_row">
-                <div class="main_row_TEXT"><h2>Level:<div id="Level"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Coins:<div id="Coins"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Prestige:<div id="Prestige"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Rebirth:<div id="Rebirth"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Laps:<div id="Laps"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Total Laps Ran:<div id="TotalLapsRan"></div></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="levelup()">Level Up</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="prestige()">Prestige</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="rebirth()">Rebirth</button></h2></div>
-            </div>
-        </main_row>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_13>
-            <div class="lap_13">
-                <div class="lap_13_TEXT"><h16>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h16></div>
-            </div>
-        </lap_13>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_14>
-            <div class="lap_14">
-                <div class="lap_14_TEXT"><h17>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h17></div>
-            </div>
-        </lap_14>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_15>
-            <div class="lap_15">
-                <div class="lap_15_TEXT"><h18>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h18></div>
-            </div>
-        </lap_15>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_16>
-            <div class="lap_16">
-                <div class="lap_16_TEXT"><h19>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h19></div>
-            </div>
-        </lap_16>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_17>
-            <div class="lap_17">
-                <div class="lap_17_TEXT"><h20>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h20></div>
-            </div>
-        </lap_17>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_18>
-            <div class="lap_18">
-                <div class="lap_18_TEXT"><h21>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h21></div>
-            </div>
-        </lap_18>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_19>
-            <div class="lap_19">
-                <div class="lap_19_TEXT"><h22>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h22></div>
-            </div>
-        </lap_19>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_20>
-            <div class="lap_20">
-                <div class="lap_20_TEXT"><h23>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h23></div>
-            </div>
-        </lap_20>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_21>
-            <div class="lap_21">
-                <div class="lap_21_TEXT"><h24>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h24></div>
-            </div>
-        </lap_21>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_22>
-            <div class="lap_22">
-                <div class="lap_22_TEXT"><h25>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h25></div>
-            </div>
-        </lap_22>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_23>
-            <div class="lap_23">
-                <div class="lap_23_TEXT"><h26>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h26></div>
-            </div>
-        </lap_23>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_24>
-            <div class="lap_24">
-                <div class="lap_24_TEXT"><h27>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h27></div>
-            </div>
-        </lap_24>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <main_row>
-            <div class="main_row">
-                <div class="main_row_TEXT"><h2>Level:<div id="Level"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Coins:<div id="Coins"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Prestige:<div id="Prestige"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Rebirth:<div id="Rebirth"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Laps:<div id="Laps"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Total Laps Ran:<div id="TotalLapsRan"></div></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="levelup()">Level Up</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="prestige()">Prestige</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="rebirth()">Rebirth</button></h2></div>
-            </div>
-        </main_row>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_25>
-            <div class="lap_25">
-                <div class="lap_25_TEXT"><h28>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h28></div>
-            </div>
-        </lap_25>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_26>
-            <div class="lap_26">
-                <div class="lap_26_TEXT"><h29>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h29></div>
-            </div>
-        </lap_26>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_27>
-            <div class="lap_27">
-                <div class="lap_27_TEXT"><h30>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h30></div>
-            </div>
-        </lap_27>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_28>
-            <div class="lap_28">
-                <div class="lap_28_TEXT"><h31>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h31></div>
-            </div>
-        </lap_28>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_29>
-            <div class="lap_29">
-                <div class="lap_29_TEXT"><h32>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h32></div>
-            </div>
-        </lap_29>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_30>
-            <div class="lap_30">
-                <div class="lap_30_TEXT"><h33>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h33></div>
-            </div>
-        </lap_30>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_31>
-            <div class="lap_31">
-                <div class="lap_31_TEXT"><h34>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h34></div>
-            </div>
-        </lap_31>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_32>
-            <div class="lap_32">
-                <div class="lap_32_TEXT"><h35>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h35></div>
-            </div>
-        </lap_32>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_33>
-            <div class="lap_33">
-                <div class="lap_33_TEXT"><h36>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h36></div>
-            </div>
-        </lap_33>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_34>
-            <div class="lap_34">
-                <div class="lap_34_TEXT"><h37>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h37></div>
-            </div>
-        </lap_34>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_35>
-            <div class="lap_35">
-                <div class="lap_35_TEXT"><h38>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h38></div>
-            </div>
-        </lap_35>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <lap_36>
-            <div class="lap_36">
-                <div class="lap_36_TEXT"><h39>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h39></div>
-            </div>
-        </lap_36>
-        <barrier>
-            <div class="barrier">
-                <div class="barrier_TEXT"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h3></div>
-            </div>
-        </barrier>
-        <main_row>
-            <div class="main_row">
-                <div class="main_row_TEXT"><h2>Level:<div id="Level"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Coins:<div id="Coins"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Prestige:<div id="Prestige"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Rebirth:<div id="Rebirth"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Laps:<div id="Laps"></div></h2></div>
-                <div class="main_row_TEXT"><h2>Total Laps Ran:<div id="TotalLapsRan"></div></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="levelup()">Level Up</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="prestige()">Prestige</button></h2></div>
-                <div class="main_row_TEXT"><h2><button onclick="rebirth()">Rebirth</button></h2></div>
-            </div>
-        </main_row>
-        <main_collumn_right>
-            <div class="main_collumn_right">
-                <div class="main_collumn_right_TEXT"><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</h1></div>
-            </div>
-        </main_collumn_right>
-    </div>
+        <div class="container_whole_page">
+           <header>Running Simulator</header>
+           <asideLEFT>
+               <div class="asideLEFT_Board">
+                   <div class="asideLEFT_rows">
+                       asideLEFT
+                   </div>
+               </div>
+           </asideLEFT>
+           <main>
+               <div class="mainboard">
+                   <div class="main_row">
+                       <nav>  
+                           <ul class="navbar">  
+                               <li>Level:<div id="Level"></div></li>  
+                               <li>Coins:<div id="Coins"></div></li>  
+                               <li>Prestige:<div id="Prestige"></div></li>
+                               <li>Rebirth:<div id="Rebirth"></div></li>
+                               <li>Laps:<div id="Laps"></div></li>  
+                               <li>Total Laps Ran:<div id="TotalLapsRan"></div></li>  
+                               <li><button class="button" onclick="levelup()">Level Up</button></li>
+                               <li><button class="button" onclick="prestige()">Prestige</button></li>
+                               <li><button class="button" onclick="rebirth()">Rebirth</button></li>
+                           </ul>  
+                       </nav>
+                   </div>
+                   <div class="lap_01">lap_01</div>
+                   <div class="lap_02">lap_02</div>
+                   <div class="lap_03">lap_03</div>
+                   <div class="lap_04">lap_04</div>
+                   <div class="lap_05">lap_05</div>
+                   <div class="lap_06">lap_06</div>
+                   <div class="lap_07">lap_07</div>
+                   <div class="lap_08">lap_08</div>
+                   <div class="lap_09">lap_09</div>
+                   <div class="lap_10">lap_10</div>
+                   <div class="lap_11">lap_11</div>
+                   <div class="lap_12">lap_12</div>
+                   <div class="main_row">
+                       <nav>  
+                           <ul class="navbar">  
+                               <li>Level:<div id="Level"></div></li>  
+                               <li>Coins:<div id="Coins"></div></li>  
+                               <li>Prestige:<div id="Prestige"></div></li>
+                               <li>Rebirth:<div id="Rebirth"></div></li>
+                               <li>Laps:<div id="Laps"></div></li>  
+                               <li>Total Laps Ran:<div id="TotalLapsRan"></div></li>  
+                               <li><button class="button" onclick="levelup()">Level Up</button></li>
+                               <li><button class="button" onclick="prestige()">Prestige</button></li>
+                               <li><button class="button" onclick="rebirth()">Rebirth</button></li>
+                           </ul>  
+                       </nav>
+                   </div>
+                   <div class="lap_13">lap_13</div>
+                   <div class="lap_14">lap_14</div>
+                   <div class="lap_15">lap_15</div>
+                   <div class="lap_16">lap_16</div>
+                   <div class="lap_17">lap_17</div>
+                   <div class="lap_18">lap_18</div>
+                   <div class="lap_19">lap_19</div>
+                   <div class="lap_20">lap_20</div>
+                   <div class="lap_21">lap_21</div>
+                   <div class="lap_22">lap_22</div>
+                   <div class="lap_23">lap_23</div>
+                   <div class="lap_24">lap_24</div>
+                   <div class="main_row">
+                       <nav>  
+                           <ul class="navbar">  
+                               <li>Level:<div id="Level"></div></li>  
+                               <li>Coins:<div id="Coins"></div></li>  
+                               <li>Prestige:<div id="Prestige"></div></li>
+                               <li>Rebirth:<div id="Rebirth"></div></li>
+                               <li>Laps:<div id="Laps"></div></li>  
+                               <li>Total Laps Ran:<div id="TotalLapsRan"></div></li>  
+                               <li><button class="button" onclick="levelup()">Level Up</button></li>
+                               <li><button class="button" onclick="prestige()">Prestige</button></li>
+                               <li><button class="button" onclick="rebirth()">Rebirth</button></li>
+                           </ul>  
+                       </nav>
+                   </div>
+                   <div class="lap_25">lap_25</div>
+                   <div class="lap_26">lap_26</div>
+                   <div class="lap_27">lap_27</div>
+                   <div class="lap_28">lap_28</div>
+                   <div class="lap_29">lap_29</div>
+                   <div class="lap_30">lap_30</div>
+                   <div class="lap_31">lap_31</div>
+                   <div class="lap_32">lap_32</div>
+                   <div class="lap_33">lap_33</div>
+                   <div class="lap_34">lap_34</div>
+                   <div class="lap_35">lap_35</div>
+                   <div class="lap_36">lap_36</div>
+                   <div class="main_row">
+                       <nav>  
+                           <ul class="navbar">  
+                               <li>Level:<div id="Level"></div></li>  
+                               <li>Coins:<div id="Coins"></div></li>  
+                               <li>Prestige:<div id="Prestige"></div></li>
+                               <li>Rebirth:<div id="Rebirth"></div></li>
+                               <li>Laps:<div id="Laps"></div></li>  
+                               <li>Total Laps Ran:<div id="TotalLapsRan"></div></li>  
+                               <li><button class="button" onclick="levelup()">Level Up</button></li>
+                               <li><button class="button" onclick="prestige()">Prestige</button></li>
+                               <li><button class="button" onclick="rebirth()">Rebirth</button></li>
+                           </ul>  
+                       </nav>
+                   </div>
+               </div>
+           </main>
+           <asideRIGHT>
+               <div class="asideRIGHT_Board">
+                   <div class="asideRIGHT_rows">
+                       asideLEFT
+                   </div>
+               </div>
+           </asideRIGHT>
+           <footer>Running Simulator</footer>
+        </div>
 </html>
